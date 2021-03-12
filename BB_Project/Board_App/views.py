@@ -15,3 +15,15 @@ def about(request):
 		'title': 'About Page',
 	}
 	return render(request, 'Board_App/about.html', context)
+
+def contact(request):
+	context = {
+		'title': 'Contact Us!',
+	}
+	return render(request, 'Board_App/contact.html', context)
+
+def shop(request):
+	context = {
+		'title': 'Shop Page',
+	}
+	return render(request, 'Board_App/shop.html', context)
