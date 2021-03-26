@@ -1,0 +1,35 @@
+body {
+    background: #f6ebd2; /*Main background color*/
+    color: #1d0202; /*Paragraph  color*/
+    margin-top: 5rem;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    color: #571907;
+  }
+  
+  .test{
+    color: white;
+  }
+  
+  ul {
+    margin: 0;
+  }
+  
+  .bg-steel {
+    background-color: #350f04; /*Nav bar background*/
+  }
+  
+  .site-header .navbar-nav .nav-link {
+    /*color: #cbd5db;*/
+    color: #f6ebd2; /*Nav bar text*/
+  }
+  
+  .site-header .navbar-nav .nav-link:hover {
+    color: #ffffff;
+  }
+  
+  .site-header .navbar-nav .nav-link.active {
+    font-weight: 500;
+  }
+  

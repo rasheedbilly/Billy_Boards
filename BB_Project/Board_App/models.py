@@ -11,7 +11,7 @@ class Product(models.Model):
     ID = models.IntegerField()
     Stock.ID = models.IntegerField()
     Name = models.CharField(max_length=30)
-    Price = models.DecimalField(max_digits=2)
+    Price = models.DecimalField(max_digits=6, decimal_places=2)
     Description = models.CharField(max_length=30)
     Image_path = models.CharField(max_length=30)
     Quanity = models.IntegerField()
@@ -21,7 +21,7 @@ class Cart(models.Model):
     #User.ID = models.IntegerField()
     Product.ID = models.IntegerField()
     created = models.DateField()
-    total = models.DecimalField(max_digits=2)
+    total = models.DecimalField(max_digits=6, decimal_places=2)
 
 class Address(models.Model):
     ID = models.IntegerField()
@@ -50,6 +50,3 @@ class Order(models.Model):
     Order_shipped = models.DateField()
     Order_paid = models.DateField()
     status = models.CharField(max_length=30)
-
-
-
